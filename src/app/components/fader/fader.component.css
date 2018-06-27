@@ -1,0 +1,94 @@
+.fader-container {
+    position: relative;
+    float: left;
+    display: block;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.fader {
+    display: block;
+    transform-origin: 3px 60px;
+    transform: rotate(90deg);
+    position: absolute;
+    width: 300px;
+    margin-top: -1em;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 35px;
+    width: 75px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url('../../../assets/fader.png') center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -16px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    position: relative;
+    width: 13em;
+    height: 0.1em;
+    border-radius: .1875em;
+    background: #404040;
+}
+
+input[type='range'] {
+    align-self: center;
+    border: solid 1.5em transparent;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    height: 0em;
+    background: -webkit-repeating-linear-gradient(left, #404040, #404040 0.0625em, transparent 0.0625em, transparent 2em) no-repeat 50% 0.4375em border-box, -webkit-repeating-linear-gradient(left, #3b3e41, #3b3e41 0.0625em, transparent 0.0625em, transparent 2em) no-repeat 50% 2em border-box;
+    background: repeating-linear-gradient(90deg, #404040, #404040 0.0625em, transparent 0.0625em, transparent 2em) no-repeat 50% 0.4375em border-box, repeating-linear-gradient(90deg, #3b3e41, #3b3e41 0.0625em, transparent 0.0625em, transparent 2em) no-repeat 50% 2em border-box;
+    background-size: 100% 0.625em, 100% 0.625em, 100% 2.25em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.fader-button label input {
+    display: none;
+}
+
+.fader-button {
+    width: 4em;
+    margin: 4px;
+    background-color: #666B73;
+    border-radius: 4px;
+    border: 1px solid #000;
+    overflow: auto;
+    float: left;
+}
+
+.fader-button label {
+    float: left;
+    width: 100%;
+}
+
+.fader-button label span {
+    text-align: center;
+    padding: 3px;
+    display: block;
+    border-radius: 4px;
+}
+
+.fader-button label input {
+    position: absolute;
+    top: -20px;
+}
