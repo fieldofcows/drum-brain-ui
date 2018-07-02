@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input, Output, EventEmitter, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'fader',
@@ -18,10 +18,20 @@ export class FaderComponent implements OnInit {
   // Current slider value
   value: number = 0;
 
+  // Height of fader calculated from parent
+  faderHeight: string = "300px";
 
-  constructor() { }
+  constructor(private host: ElementRef) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    // The host element is the native component element in the parent (<fader> in this case)
+    // Size the fader according to this height
+    setTimeout(() => {
+      this.faderHeight = this.host.nativeElement.offsetHeight - 45 + "px";
+    });
   }
 
   // Event handler for when the slider value changes

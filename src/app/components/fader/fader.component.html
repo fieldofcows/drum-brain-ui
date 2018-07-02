@@ -1,5 +1,5 @@
 <div class="fader-container">
-    <div class="fader">
+    <div class="fader" [style.width]="faderHeight">
     <input type="range" #ref data-slider="6" min="0" max="1" step="0.01" (input)="setValue(ref.value)">
   </div>
   <div class="fader-button">

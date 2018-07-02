@@ -1,0 +1,9 @@
+.mixer {
+    display: flex; 
+    justify-content: flex-start;
+    height: 450px;
+}
+
+fader {
+    width: 80px;
+}
