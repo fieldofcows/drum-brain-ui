@@ -1,11 +1,11 @@
 <div class="fader-container">
     <div class="fader">
-    <input type="range" data-slider="6" min="0" max="1.5" step="0.01">
+    <input type="range" #ref data-slider="6" min="0" max="1" step="0.01" (input)="setValue(ref.value)">
   </div>
   <div class="fader-button">
     <label>
-      <input type="button">
-      <span>Snare</span>
+      <input type="button" (click)="onClick()">
+      <span>{{ name }}</span>
     </label>
   </div>
 </div>

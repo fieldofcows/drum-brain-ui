@@ -1,13 +1,14 @@
-<div style="width: 500px; height: 365px;">
-  Hello
-  </div>
-<div style="width: 950px; height: 365px;">
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
-  <fader></fader>
+<div style="color: white;" >{{ bass.value }}</div>
+
+<div style="display: flex; justify-content: flex-start;">
+  <fader name="Bass" #bass (clickTitle)="onClickBass()"></fader>
+  <fader name="Snare"></fader>
+  <fader name="Hi-hat"></fader>
+  <fader name="Tom 1"></fader>
+  <fader name="Tom 2"></fader>
+  <fader name="Tom 3"></fader>
+  <fader name="Crash 1"></fader>
+  <fader name="Crash 2"></fader>
+  <fader name="Ride"></fader>
+  <fader name="Master"></fader>
 </div>

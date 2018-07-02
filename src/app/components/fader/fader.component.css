@@ -1,10 +1,15 @@
+:host {
+    display: table-cell;
+    padding: 0;
+}
+
 .fader-container {
     position: relative;
     float: left;
     display: block;
     height: 100%;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 .fader {
@@ -36,9 +41,13 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -16px;
 }
 
+/*
+* Blue background when focussed is disabled for now
+
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #367ebd;
+   background: #367ebd;
 }
+*/
 
 input[type='range']::-webkit-slider-runnable-track {
     position: relative;
@@ -91,4 +100,8 @@ input[type='range'] {
 .fader-button label input {
     position: absolute;
     top: -20px;
+}
+
+.fader-button:active {
+    background: #367ebd;
 }
