@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Channel } from '../../model/channel';
 
 @Component({
   selector: 'mixer',
@@ -6,14 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mixer.component.css']
 })
 export class MixerComponent implements OnInit {
+  /**
+   * Array of channels for the mixer
+   */
+  @Input()
+  channels: Array<Channel>;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onClickBass() {
-
+  onClick(channel: Channel) {
+    console.log(channel);
   }
 
 }

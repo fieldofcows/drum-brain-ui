@@ -16,6 +16,7 @@ export class FaderComponent implements OnInit {
   clickTitle = new EventEmitter();
 
   // Current slider value
+  @Input()
   value: number = 0;
 
   // Height of fader calculated from parent
