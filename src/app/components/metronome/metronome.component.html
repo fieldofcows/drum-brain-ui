@@ -1,0 +1,6 @@
+<div class="metronome">
+  <div id="wand" [ngClass]="{'swingLeft': swingLeft, 'swingRight': !swingLeft}"
+                 [ngStyle]="{'transition-duration': getSwingTime(), '-webkit-transition-duration': getSwingTime()}">
+  </div>
+  <button style="margin-top: 50px;" (click)="toggle()">Tick</button>
+</div>

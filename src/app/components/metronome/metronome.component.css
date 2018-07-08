@@ -1,0 +1,50 @@
+.metronome {
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100px;
+  height: 300px;
+}
+
+#wand {
+  position: relative;
+  top: 11.8%;
+  left: -3%;
+  margin: 0 auto;
+  background: url(http://victorblog.com/metronome/img/wand.png?v3) no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 90.29%;
+
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+
+  transform: rotate(-0.6deg);
+  -webkit-transform: rotate(-0.6deg);
+  -moz-transform: rotate(-0.6deg);
+  -o-transform: rotate(-0.6deg);
+  -ms-transform: rotate(-0.6deg);
+}
+
+#wand.swingLeft {
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+}
+
+#wand.swingRight {
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+}
