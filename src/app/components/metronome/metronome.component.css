@@ -1,14 +1,25 @@
+:host {
+    display: table-cell;
+    padding: 0;
+}
+
+
+.metronome-container {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 .metronome {
-  padding-left: 100px;
-  padding-right: 100px;
-  width: 100px;
-  height: 300px;
+    display: block;
+    position: absolute;
 }
 
 #wand {
   position: relative;
-  top: 11.8%;
-  left: -3%;
+  top: 10%;
   margin: 0 auto;
   background: url(http://victorblog.com/metronome/img/wand.png?v3) no-repeat;
   background-size: contain;

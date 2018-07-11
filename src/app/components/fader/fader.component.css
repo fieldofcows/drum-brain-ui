@@ -14,14 +14,14 @@
 .fader {
     display: block;
     transform-origin: 3px 60px;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(20px);
     position: absolute;
     margin-top: -1em;
 }
 
 input[type=range] {
     -webkit-appearance: none;
-    width: 100%;
+    width: 90%;
 }
 
 input[type=range]:focus {

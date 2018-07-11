@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { FaderComponent } from './components/fader/fader.component';
 import { MixerComponent } from './components/mixer/mixer.component';
 import { MetronomeComponent } from './components/metronome/metronome.component';
+import { ClickComponent } from './components/click/click.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaderComponent,
     MixerComponent,
-    MetronomeComponent
+    MetronomeComponent,
+    ClickComponent
   ],
   imports: [
     BrowserModule
