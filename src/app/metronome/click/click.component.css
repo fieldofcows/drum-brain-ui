@@ -1,18 +1,27 @@
 .click {
-  width: 15.8em;
-  height: 16em;
+  width: 17em;
+  height: 17em;
+  border-bottom: 2px solid #202020;
+	border-top: 2px solid #3c3c3c;
+	border-right: 2px solid #202020;
+	border-left: 2px solid #3c3c3c;}
+
+.click-container {
+  margin: 0.5em;
 }
 
-.metronome {
+.pendulum {
+  margin-top: -10px;
   height: 50%;
 }
 
-metronome {
+pendulum {
   height: 7.5em;
   width: 15.8em;
 }
 
 .transport {
+  margin-top: 10px;
   position: relative;
   color: white;
   height: 50%;

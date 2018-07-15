@@ -4,19 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FaderComponent } from './components/fader/fader.component';
 import { MixerComponent } from './components/mixer/mixer.component';
-import { MetronomeComponent } from './components/metronome/metronome.component';
-import { ClickComponent } from './components/click/click.component';
+import { MetronomeModule } from './metronome/metronome.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaderComponent,
-    MixerComponent,
-    MetronomeComponent,
-    ClickComponent
+    MixerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MetronomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

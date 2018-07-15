@@ -4,15 +4,7 @@
 }
 
 
-.metronome-container {
-    position: relative;
-    float: left;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.metronome {
+.pendulum {
     display: block;
     position: absolute;
 }

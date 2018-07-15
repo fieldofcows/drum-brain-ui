@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MetronomeComponent } from './metronome.component';
+import { PendulumComponent } from './pendulum.component';
 
-describe('MetronomeComponent', () => {
-  let component: MetronomeComponent;
-  let fixture: ComponentFixture<MetronomeComponent>;
+describe('PendulumComponent', () => {
+  let component: PendulumComponent;
+  let fixture: ComponentFixture<PendulumComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MetronomeComponent ]
+      declarations: [ PendulumComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MetronomeComponent);
+    fixture = TestBed.createComponent(PendulumComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

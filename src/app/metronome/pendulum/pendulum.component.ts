@@ -2,16 +2,16 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { Observable, timer, Subscription } from 'rxjs';
 
 @Component({
-  selector: 'metronome',
-  templateUrl: './metronome.component.html',
-  styleUrls: ['./metronome.component.css']
+  selector: 'pendulum',
+  templateUrl: './pendulum.component.html',
+  styleUrls: ['./pendulum.component.css']
 })
-export class MetronomeComponent implements OnInit {
+export class PendulumComponent implements OnInit {
   swingLeft = true;
   timer: Observable<number> = null;
   subscription: Subscription = null;
-  metronomeHeight = '128px';
-  metronomeWidth = '128px';
+  pendulumHeight = '128px';
+  pendulumWidth = '128px';
 
   constructor(private host: ElementRef) { }
 
@@ -23,9 +23,9 @@ export class MetronomeComponent implements OnInit {
     // The host element is the native component element in the parent (<fader> in this case)
     // Size the fader according to this height
     setTimeout(() => {
-      this.metronomeHeight = this.host.nativeElement.offsetHeight + 'px';
-      this.metronomeWidth = this.host.nativeElement.offsetWidth + 'px';
-      console.log(this.metronomeHeight);
+      this.pendulumHeight = this.host.nativeElement.offsetHeight + 'px';
+      this.pendulumWidth = this.host.nativeElement.offsetWidth + 'px';
+      console.log(this.pendulumHeight);
       this.toggle();
     });
   }
